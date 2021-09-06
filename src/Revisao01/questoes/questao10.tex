@@ -1,7 +1,57 @@
-\begin{question}
-	\begin{itemize}
-		\item $R_1 = \{ (a,b) | b\text{ e }a \text{ possuem um fator comum(MDC) maior que 1} \}  \subset NxN \text{ É uma relação em N }$
-		\item $R_2= \{ (a,b) | b - a \text{ é divisível por 5} \}  \subset NxN \text{ É uma relação em N }$
-		\item $R_3 = \{ (a,b) | b -a \text{ é par} \} \subset ZxZ \text{ É uma relação em Z* }$
-	\end{itemize}
-\end{question}
+\section*{Preenchimento de Áreas}
+
+  \begin{enumerate}[label=\arabic*)] \addtocounter{enumi}{34}
+   
+   		\item 
+   		
+        \begin{enumerate}[label=\alph*.]
+		\setlength\itemsep{1em}
+		
+		\item Boundary fill é o algoritmo usado com frequência em computação gráfica para preencher uma cor desejada dentro de um polígono fechado com a mesma cor de limite para todos os seus lados.
+		
+		\textbf{Vantagens} : Lógica simples e simples de implementar
+		
+		\textbf{Desvantagens} : A cor da borda deve ser a mesma para todas as arestas do polígono.
+		
+		\item Flood Fill é o algoritmo que determina e altera a área conectada a um determinado nó em uma matriz multidimensional com algum atributo correspondente.
+	
+		\textbf{Vantagens} : o preenchimento colore uma área inteira em uma figura fechada por meio de pixels interconectados usando uma única cor.
+		
+       É uma maneira fácil de preencher as cores nos gráficos. Um apenas toma a forma e começa o flood fill.
+       
+       O algoritmo funciona de forma a dar a todos os pixels dentro do limite a mesma cor
+		
+		\textbf{Desvantagens} : não é adequado para desenhar polígonos preenchidos, pois perderá alguns pixels em cantos mais agudos.
+		
+		\item ScanLine é o algoritmo que processa uma linha por vez, em vez de processar um pixel (um ponto na exibição raster) de cada vez.
+		
+		\textbf{Vantagens} : 
+		
+		Classificar vértices ao longo da normal do plano de varredura reduz o número de comparações entre as bordas
+		
+       Não é necessário traduzir as coordenadas de todos os vértices da memória principal para a memória de trabalho - apenas os vértices que definem as arestas que cruzam a linha de varredura atual precisam estar na memória ativa, e cada vértice é lido apenas uma vez.
+       
+		\textbf{Desvantagens} : 
+		
+                    É um algoritmo mais complexo.
+
+                    Requer todos os polígonos enviados ao renderizador antes de desenhar.
+									
+ 	\end{enumerate}
+ 	
+ 	\item  
+ 	
+ 	\item 
+ 	
+ 	        \begin{enumerate}[label=\alph*.]
+					\setlength\itemsep{1em}
+		
+					\item Boundary fill 
+		
+					\item Flood Fill 
+		
+					\item ScanLine 
+									
+ 			  \end{enumerate}
+ 			 
+   \end{enumerate}

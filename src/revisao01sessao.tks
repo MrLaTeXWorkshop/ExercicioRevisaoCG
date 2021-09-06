@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="false" line="1" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/main.tex"/>
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="false" line="0" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao2.tex"/>
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="false" line="0" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/meupacote.sty"/>
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="false" line="0" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao1.tex"/>
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="false" line="0" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao3.tex"/>
-    <document bookmark3="0" bookmark2="0" bookmark1="0" hasfocus="true" line="0" master="false" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao4.tex"/>
+    <document line="0" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao1.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao2.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="2" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao4.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="2" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/main.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="0" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao3.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="0" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao5.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="12" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao10.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="0" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao9.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="4" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao8.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="true"/>
+    <document line="4" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao7.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
+    <document line="9" bookmark1="0" file="/home/gustavolr/HD/code/ExercicioRevisaoCG/src/Revisao01/questoes/questao6.tex" bookmark2="0" bookmark3="0" master="false" hasfocus="false"/>
 </TexmakerSession>
