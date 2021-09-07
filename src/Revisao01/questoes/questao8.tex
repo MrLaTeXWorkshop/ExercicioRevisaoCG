@@ -3,11 +3,43 @@
 	\begin{enumerate}\addtocounter{enumi}{27}
 	
 		\item 
+		Apenas no final é feito a atualização, pois primeiro é preciso verificar se a reta está dentro
+		da área de clipping, mas também é preciso verificar qual é o ajuste é necessário para 
+		que a reta fique dentro da área desejada
 		
 		\item 
-		
+		As estruturas condicionais são aninhadas, pois o programa verifica pelos cantos da
+		área de clipping, ou seja, os cantos direito e esquerdo, tanto inferior e superior.
 		\item 
+		u1 e u2 são parámetros de interseção da linha, quando u1 é maior que u2, rejeitamos
+		essa linha, pois significa que ela não está mais dentro da área de clipping, logo, iniciamos
+		u1 com 0 e u2 com 1, pois 0 < 1.
+		\item
 		
-		\item 
+		Primeira Linha(AB) $\rightarrow$ (-1,-3) $\rightarrow$ (-2,-8)
+		
+		dy = 11.0
+
+		Linha rejeitada
+
+		Segunda linha (BC) $\rightarrow$ (-2,-8) $\rightarrow$ (9,2)
+
+		dy = -6.0
+       t2 = 0.72
+       t1 = 0.33
+
+		Linha aceita: 
+		
+ 		x1: 1 ,x2: 6 ,y1: 6 ,y2: 3
+ 		
+ 		Segunda linha (AC) $\rightarrow$ (-1,-3) $\rightarrow$ (9,2)
+
+		dy =5.0
+       t2 = 0.7
+       t1 = 0.6
+
+		Linha aceita: 
+		
+		x1: 5 ,x2: 6 ,y1: 0 ,y2: 0 
 		
 	\end{enumerate}

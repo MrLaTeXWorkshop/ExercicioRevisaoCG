@@ -5,13 +5,19 @@
 	\begin{enumerate}\addtocounter{enumi}{10}
 	
 		\item O algoritmo de bresenham trabalha com inteiros em vez de pontos flutuantes(floats),
-		isso permite com que as linhas sejam mais precisas, quando comparadas ao algoritmo DDA
+		isso permite com que as linhas sejam mais precisas, quando comparadas ao algoritmo DDA.
+		Sem contar o gasto em memória é menor, já que precisamos de menor bytes para armazenar 	       valores inteiros do que pontos flutuantes.
 		
 		\item 
 
 		\item 
 
 		\item 
+		Quando a variável \textbf{p} for positiva, incrementamos o valor do \textbf{y},
+		isso acontece pois \textbf{p} é a variável de decisão que irá conduzir ao algoritmo
+		qual pixel ele deve tomar na hora de formar a linha. Como \textbf{p} é positivo, 
+		significa que a diferença entre d1 e d2(o pixel anterior e posterior) é maior que zero,
+		por isso, precisamos que o valor de y incremente.
 
         \item \begin{enumerate}[label=\alph*.]
 				   \setlength\itemsep{1em}

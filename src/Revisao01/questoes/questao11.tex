@@ -1,4 +1,4 @@
-\begin{question}
+\section*{Antialiasing}
 
  	        38) \begin{enumerate}[label=\alph*.]
 					\setlength\itemsep{1em}
@@ -11,12 +11,40 @@
 					\textbf{Desvantagens} : Força bruta, mais espaço de armazenamento, mais
 					tempo de processamento
 		
-					\item Amostragem por áreas é o algoritmo de intensidade do pixel é calculado pelo tamanho da 	  		área do pixel que é interceptada/sobreposta pelo objeto
-		
-					\item Uso de máscaras
+					\item Amostragem por áreas é o algoritmo de intensidade do pixel onde é calculado pelo tamanho da 	área do pixel que é interceptada/sobreposta pelo objeto
 					
-					\item Pixel Phasing é um algoritmo onde as extremidades são suavizadas, sensibilizando no monitor áreas mais próximas dos valores contínuos.
+					\textbf{Vantagens} : 
+					
+					\begin{itemize}
+							\item Quase elimina o aliasing devido à subamostragem;
+							\item Permite o pré-cálculo de filtros caros;
+							\item Excelente qualidade de imagem;
+					\end{itemize}
+																 
+					\textbf{Desvantagens} : Para formas de amostragem diferentes de polígonos, 
+					este algoritmo pode ter um preço computacional maior.
+		
+					\item Uso de máscaras é um algoritmo onde a intensidade do pixel é calculada a partir
+					da distribuição de pesos entre os pixels dentro de uma grade
+					
+					\textbf{Vantagens} :  \begin{itemize}
+						\item Aumenta a resolução da imagem original;
+						\item Encontra  as  melhores  posições  dos  pixels  atribuídos.  Este  procedimento reduz  a percepção do efeito escadinha ao retornar uma imagem com melhor qualidade visual;
+					\end{itemize}
+					
+					\textbf{Desvantagens} : Para formas de amostragem diferentes de polígonos, 
+					este algoritmo pode ter um preço computacional maior.
+					
+					\item Pixel Phasing é um algoritmo onde as extremidades são suavizadas, aqui, as posições dos pixels são deslocadas para posições mais aproximadas especificadas pela geometria do objeto. O algortimo também  permite  o  ajuste  de  pixels  individuais 
+para  um meio  adicional  ocorrendo  uma  distribuição  de  intensidade
+					
+					\textbf{Vantagens} :  \begin{itemize}
+						\item Aumenta a resolução da imagem original;
+						\item Encontra  as  melhores  posições  dos  pixels  atribuídos.  Este  procedimento reduz  a percepção do efeito escadinha ao retornar uma imagem com melhor qualidade visual;
+					\end{itemize}
+					
+					\textbf{Desvantagens} : Para formas de amostragem diferentes de polígonos, 
+					este algoritmo pode ter um preço computacional maior.
 									
  			  \end{enumerate}
  			  
-\end{question}

@@ -17,26 +17,30 @@
 	
 		\textbf{Vantagens} : o preenchimento colore uma área inteira em uma figura fechada por meio de pixels interconectados usando uma única cor.
 		
-       É uma maneira fácil de preencher as cores nos gráficos. Um apenas toma a forma e começa o flood fill.
+		\begin{itemize}
+			\item  É uma maneira fácil de preencher as cores nos gráficos. Um apenas toma a forma e começa o flood fill.
+			\item  O algoritmo funciona de forma a dar a todos os pixels dentro do limite a mesma cor
+		\end{itemize}
        
-       O algoritmo funciona de forma a dar a todos os pixels dentro do limite a mesma cor
+
 		
 		\textbf{Desvantagens} : não é adequado para desenhar polígonos preenchidos, pois perderá alguns pixels em cantos mais agudos.
 		
 		\item ScanLine é o algoritmo que processa uma linha por vez, em vez de processar um pixel (um ponto na exibição raster) de cada vez.
 		
 		\textbf{Vantagens} : 
+		\begin{itemize}
+			\item Classificar vértices ao longo da normal do plano de varredura reduz o número de comparações entre as bordas
+			\item Não é necessário traduzir as coordenadas de todos os vértices da memória principal para a memória de trabalho - apenas os vértices que definem as arestas que cruzam a linha de varredura atual precisam estar na memória ativa, e cada vértice é lido apenas uma vez.
+		\end{itemize}
 		
-		Classificar vértices ao longo da normal do plano de varredura reduz o número de comparações entre as bordas
-		
-       Não é necessário traduzir as coordenadas de todos os vértices da memória principal para a memória de trabalho - apenas os vértices que definem as arestas que cruzam a linha de varredura atual precisam estar na memória ativa, e cada vértice é lido apenas uma vez.
-       
 		\textbf{Desvantagens} : 
 		
-                    É um algoritmo mais complexo.
+				\begin{itemize}
+					\item É um algoritmo mais complexo.
+					\item Requer todos os polígonos enviados ao renderizador antes de desenhar.
+				\end{itemize}
 
-                    Requer todos os polígonos enviados ao renderizador antes de desenhar.
-									
  	\end{enumerate}
  	
  	\item  
