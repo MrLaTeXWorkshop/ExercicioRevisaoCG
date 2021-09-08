@@ -7,8 +7,18 @@
 		Sem contar o gasto em memória é menor, já que precisamos de menor bytes para armazenar 	       valores inteiros do que pontos flutuantes.
 		
 		\item 
+O algoritmo de Bresenham se torna extremamente eficiente ao dividir os ângulos de
+desenho de reta em 8 partes. O uso apenas de valores positivos se dá por conta do passo do
+algoritmo. Para se desenhar uma linha deve-se ir desenhando da esquerda para a
+direita. O inverso implicaria em modificar drasticamente a implementação do algoritmo para
+permitir que linhas possam ser desenhadas da direita para a esquerda, o que só aumentaria a
+complexidade desse, uma vez que apenas invertendo os pontos resultaria na mesma linha. Por
+exemplo, se um ponto A está a direita de B, não é necessário implementar a escrita da linha da
+direita para a esquerda e sim trocar a ordem dos pontos, desenhando de B para A.
 
 		\item 
+A ideia do algoritmo em sempre atualizar \textbf{x} antes da variável de controle \textbf{p} é em
+sempre começar desenhando naquele pixel para depois ver se será necessário desenhar em um pixel acima ou abaixo desse, essa foi uma escolha de implementação feita por Bresenham. Se a linha que estiver sendo desenhada estiver o \textbf{m} maior que 1, então teremos que atualizar \textbf{y} ao invés de \textbf{x}. E seguir a mesma ideia de posteriormente atualizar a variável  \textbf{p}, para ver se precisamos desenhar em outro pixel em \textbf{x}.
 
 		\item 
 		Quando a variável \textbf{p} for positiva, incrementamos o valor do \textbf{y},
@@ -75,7 +85,7 @@
 						
 						6, 0
 									
-					\item   GH – G(1, 3) e (1, 6)
+					\item   GH – G(1, 3) e H(1, 6)
 									
                       1, 3
                       

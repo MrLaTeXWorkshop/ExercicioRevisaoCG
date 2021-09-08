@@ -8,7 +8,7 @@
 		da reta, o número de iterações será essa diferença.
 		
 		\item 
+		
+       Para o algoritmo do DDA, o motivo de usar apenas valores positivos se dá no
+      momento em que o passo de \textbf{x} precisa ser incrementado. Se não usar o valor absoluto nessa equação não será possível desenhar o deslocamento da linha AB, contudo se todo o algoritmo for modificado para usar um passo de \textbf{x} negativo, será possível sim usar valores de delta negativos. Já no caso de Bresenham, é impossível, pois seu algoritmo é bem mais complexo e divide o ângulo da reta em 8 partes, valores negativos implicariam em mudar consideravelmente sua fórmula, uma vez que para evitar deltas negativos no algoritmo de Bresenham, define que deve-se inverter a direção do desenho para que volte a ser usado apenas valores positivos.
 	\end{enumerate}
-
-
-\newpage

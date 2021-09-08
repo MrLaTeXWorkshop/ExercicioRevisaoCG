@@ -2,12 +2,15 @@
 
 	\begin{enumerate}\addtocounter{enumi}{21}
 		\item 
-		
+Os códigos 3 e 7, não são considerados, pois em representação binária seriam 11 e
+111 e o primeiro bit representa um lado do recorte o segundo bit o outro lado – o terceiro bit
+representa que está em baixo -. Dessa forma, é impossível que eles estejam juntos, não é possível que um ponto de uma linha esteja ao mesmo tempo a direita e a esquerda da janela de clipping.		
 		\item 
 		Há duas condições de paradas para o algoritmo, no primeiro caso, ambos os pontos
 		estão dentro da área de clipping, no outro caso, ambos os pontos estão fora da área;
 		\item
-		
+Uma das condições de parada é quando a linha não está desenhada dentro da área de
+recorte. Outra razão de parada é se a linha estiver inteiramente dentro da área de clipping. Por fim, as outras razões de parada estão relacionadas à encontrar o ponto de intersecção entre a linha e a janela de recorte, depois de descobrir esse ponto e executar novamente para descobrir o outro ponto (se já estiver dentro já podemos parar), então o algoritmo.
 		\item 
 		c1 e c2 são as váriaveis que vão computar a posição dos pontos da reta
 		inserida no algoritmo. Ambas são números onde cada bit representa a direção
@@ -17,7 +20,8 @@
 		 em um número que está fora da área de clipping.
 		
 		\item 
-		
+		Para os valores originais da cena antes da execução do código, se não forem salvos
+pelo programador antes de executar o algoritmo, serão todos perdidos.
 		\item 
 
 		Primeira Linha(AB) $\rightarrow$ (-1,-3) $\rightarrow$ (-2,-8)

@@ -7,12 +7,70 @@
 	   no infinito.
 		
 		\item 
-
+	Escala
+	\begin{equation*}
+	P' = 
+	\begin{bmatrix} 
+	S_x & 0 \\
+	 0   & S_y \\
+	\end{bmatrix}
+	\quad
+	\times
+   \begin{bmatrix} 
+	P_x  \\
+	P_y    \\
+	\end{bmatrix}
+	\quad
+	\rightarrow 
+	P' = 
+	\begin{bmatrix} 
+	S_x  *  P_x \\
+	S_y  *  P_y \\
+	\end{bmatrix}
+	\quad
+	\end{equation*}
+	Rotação
+	\begin{equation*}
+	P' = 
+	\begin{bmatrix} 
+    cos \text{ } \alpha    & - sen \text{ } \alpha \\
+	 sen \text{ } \alpha   &  cos \text{ } \alpha  \\
+	\end{bmatrix}
+	\quad
+	\times
+   \begin{bmatrix} 
+	P_x  \\
+	P_y    \\
+	\end{bmatrix}
+	\quad
+	\rightarrow 
+	P' = 
+	\begin{bmatrix} 
+	  P_x * cos \text{ } \alpha - P_y * sen \text{ } \alpha \\
+	  P_x * sen \text{ } \alpha - P_y * cos \text{ } \alpha \\
+	\end{bmatrix}
+	\quad
+	\end{equation*}
+	
+	\begin{equation}
+		P_x * S_x = P_x * cos \text{ } \alpha - P_y * sen \text{ } \alpha
+	\end{equation}
+	
+	\begin{equation*}
+		S_x = cos \text{ } \alpha - P_y * sen \text{ } \alpha
+	\end{equation*}
+	
+	\begin{equation}
+		P_y * S_y = P_x * sen \text{ } \alpha - P_y * cos \text{ } \alpha
+	\end{equation}
+	
+	\begin{equation*}
+		S_y = P_x * sen \text{ } \alpha - cos \text{ } \alpha
+	\end{equation*}
 		\item 
-		Essa movimentação só pode ser evitada, garantindo que todo objeto tenha um 
+		Essa  movimentação pode ser evitada, garantindo que todo objeto tenha um 
 		ponto central, dessa forma, para fazer as operações, o vetor para escalonar é a diferença do
 		vértice e esse ponto central.
-
 		\item 
 
 		\item 

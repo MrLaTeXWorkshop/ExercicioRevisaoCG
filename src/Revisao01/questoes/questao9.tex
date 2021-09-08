@@ -5,7 +5,18 @@
    		\item 
    		O algoritmo Sutherland – Hodgman funciona estendendo cada linha do polígono do clipe convexo por vez, e selecionando apenas os vértices do polígono que estão visíveis.
        \item 
- 			  
+ Para a lista de vértices ser atualizada precisamos considerar 4 possibilidades. A
+primeira acontece se ambos os vértices estão dentro da área de  clipping, a segunda seria se o
+primeiro vértice está dentro e o segundo vértice está fora. A próxima é quando o primeiro vértice
+está fora e o segundo dentro e, por último, se ambos estão fora.
        \item 
        
+       \begin{itemize}
+       	   \item (-1, 1)
+	       \item (-1, 6)
+  			\item (1, 6)
+			\item (5, 4)
+			\item (5, 1)
+       \end{itemize}
+
    \end{enumerate}
