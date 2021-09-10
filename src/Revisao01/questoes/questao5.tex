@@ -6,7 +6,10 @@
 		octante, e o resto, o algoritmo projeta o mesmo resultado para os outros octantes.
 		
 		\item 
-
+		O que restringe o desenho da circunferência no segundo quadrante é as linhas:
+		\textbf{desenharPixel(xc -x, yc - y)} e \textbf{desenharPixel(xc - y, yc - x)}. 
+		Todas as operações de	escrita do pixel quando o x e o y são negativos.		
+		
 		\item 
 		A atualização do 'x' precisa ser atualizado antes da variável 'p' e 'y', pois o cálculo
 		da variável de decisão 'p' requer o uso do valor em 'x', que precisa ser atualizado. 
@@ -14,9 +17,12 @@
 		de 'x' anterior as outras duas variáveis.
 		 
 		\item 
-
+       Durante chamada da função de desenhar os 8 pontos do círculos as posições do X e do Y 
+       que não estão na origem são utilizados. Dessa forma, durante o algoritmo em si não é 
+       necessário saber se o circulo não está na origem, só quando os pontos serão desenhados.
+       
 		\item
-		\begin{enumerate}[label=\alph*]
+		\begin{enumerate}[label=\alph*. ]
 			\item 
 		
             x = 2, y = 4, p = 5
