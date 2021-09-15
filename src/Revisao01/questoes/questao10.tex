@@ -7,23 +7,30 @@
         \begin{enumerate}[label=\alph*.]
 		\setlength\itemsep{1em}
 		
-		\item Boundary fill é o algoritmo usado com frequência em computação gráfica para preencher uma cor desejada dentro de um polígono fechado com a mesma cor de limite para todos os seus lados.
+		\item Boundary fill é o algoritmo usado para preencher pontos com uma cor
+		indicada, até encontrar uma cor alvo ou limite, indicando a fronteira da área.
+
+		\textbf{Vantagens} : Lógica simples, além de ser fácil de implementar
 		
-		\textbf{Vantagens} : Lógica simples e simples de implementar
-		
-		\textbf{Desvantagens} : A cor da borda deve ser a mesma para todas as arestas do polígono.
-		
-		\item Flood Fill é o algoritmo que determina e altera a área conectada a um determinado nó em uma matriz multidimensional com algum atributo correspondente.
-	
-		\textbf{Vantagens} : o preenchimento colore uma área inteira em uma figura fechada por meio de pixels interconectados usando uma única cor.
+		\textbf{Desvantagens} : 
 		
 		\begin{itemize}
+			\item A cor da borda deve ser a mesma para todas as arestas do polígono.
+			\item Ao usar a análise de conectividade 8(8 vizinhos), com arestas inclinadas, pode
+			ocorrer o vazamento, resultando em preenchimento da área externa.
+		\end{itemize}
+		
+		\item Flood Fill é o algoritmo que tem como objetivo recolorir uma determinada área de
+		pixels com outra cor, substituindo a cor antiga por uma nova.
+	
+		\textbf{Vantagens} : 
+		
+		\begin{itemize}
+			\item o preenchimento colore uma área inteira em uma figura fechada por meio de pixels interconectados usando uma única cor.
 			\item  É uma maneira fácil de preencher as cores nos gráficos. Um apenas toma a forma e começa o flood fill.
 			\item  O algoritmo funciona de forma a dar a todos os pixels dentro do limite a mesma cor
 		\end{itemize}
-       
 
-		
 		\textbf{Desvantagens} : não é adequado para desenhar polígonos preenchidos, pois perderá alguns pixels em cantos mais agudos.
 		
 		\item ScanLine é o algoritmo que processa uma linha por vez, em vez de processar um pixel (um ponto na exibição raster) de cada vez.
