@@ -2,10 +2,70 @@
 
 	\begin{enumerate}\addtocounter{enumi}{9}
 	
-		\item 
+		\item Interpoladas
+	
+		Vantagens
+		\begin{itemize}
+			\item Possui uma implementação simplista(fácil e direta)
+			
+			\item Usa um modelo matemático mais simples, garantindo 
+			continuidade nas junções 
+		\end{itemize}				
 		
-		\item 
-		
-		\item 
+		Desvantagens
+		\begin{itemize}
+			\item Não garante suavidade ao longo da curva e 
+		nas junções entre curvas.
+		\end{itemize}				
 
+		\item Hermite 
+		
+		Vantagens
+		\begin{itemize}
+			\item Garante suavidade e continuidade ao longo da curva
+			e nos junções entre curvas
+		\end{itemize}				
+		
+		Desvantagens
+		
+		\begin{itemize}
+			\item Predefinição das derivadas de primeira
+			ordem é um fator de dificuldade para o 
+			público em geral
+		\end{itemize}			
+		
+		\item Bezier
+		
+		Vantagens
+		\begin{itemize}
+			\item Garante suavidade e continuidade ao longo da curva
+			
+			\item Cálculo aproximado das derivadas de primeira ordem 
+			
+			\item Modelo matemático mais utilizado nas ferramentas
+			comerciais de desenho
+		\end{itemize}				
+		
+		Desvantagens
+		
+		\begin{itemize}
+			\item Não é possível garantir suavidade nas junções entre curvas
+		\end{itemize}	
+		
+		\item NURBS
+	
+		Vantagens
+		\begin{itemize}
+			\item Garante suavidade e continuidade ao longo da curva
+			e nos junções entre curvas
+		\end{itemize}				
+		
+		Desvantagens
+		
+		\begin{itemize}
+			\item Predefinição das derivadas de primeira
+			ordem é um fator de dificuldade para o 
+			público em geral
+		\end{itemize}	
+		
 	\end{enumerate}
