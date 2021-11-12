@@ -1,13 +1,12 @@
 \textbf{12)} 
 
 \begin{itemize}
-	\item \textbf{Cor física} é o processo físico que ocorre para a 
-	formação da cor, ou seja as ondas eletromagnéticas
+	\item \textbf{Gouraud} - Sobreamento interpolado onde a luz é calculado 
+	por vertex(Vertex shader) de uma primitiva, e então interpola a luz para 
+	os fragmentos da primitiva 
+	\item \textbf{Phong} - Outro tipo de sobreamento interpolado, porém a luz 
+	é calculado separadamente para cada fragmento de shader. Em outras palavras:
+	diferente do Gouraud, onde o polígono todo é usado para o cálculo, no Phong, 
+	apenas as normais das vertexs são usadas.
 	
-	\item \textbf{Cor do objeto} é o resultado das ondas eletromagnéticas 
-	refletindo sobre um objeto e chegando aos olhos humanos
-	
-	\item \textbf{Cor percebida} refere-se a fração do espectro magnético de
-	cores que podem ser captadas pelos olhos humanos, também conhecido como 
-	o espectro visível
 \end{itemize}

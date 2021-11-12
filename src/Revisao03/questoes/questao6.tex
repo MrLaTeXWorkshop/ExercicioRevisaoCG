@@ -1,13 +1,19 @@
 \textbf{6)} 
 
 \begin{itemize}
-	\item \textbf{Cor física} é o processo físico que ocorre para a 
-	formação da cor, ou seja as ondas eletromagnéticas
+	\item \textbf{Volumes limítrofes} - Encapsular objetos por regiões com 
+	seções planas como retângulos(paralelepípedos), circunferências(esferas),
+	elipses(elipsóides). Isto simplifica os cálculos das retas, com as seções do objeto.
 	
-	\item \textbf{Cor do objeto} é o resultado das ondas eletromagnéticas 
-	refletindo sobre um objeto e chegando aos olhos humanos
+	\item \textbf{Hierarquia de volumes limítrofes} - Agrupam-se outros volumes dentro de um volume maior.
+	O método de agrupamento é arbitrário, pode utilizar a distribuição dos objetos na cena.
 	
-	\item \textbf{Cor percebida} refere-se a fração do espectro magnético de
-	cores que podem ser captadas pelos olhos humanos, também conhecido como 
-	o espectro visível
+	\item \textbf{Grid uniforme} - Seção plana da cena divida em uma matriz,
+	onde cada célula possuem o mesmo tamanho .
+
+	\item \textbf{Octree} - Aspecto da cena como critério de homogeneidade,
+	flexibiliza células(regiões das seções planas) de tamanhos variados
+	
+	\item \textbf{BSP} - Possibilidade de divisões em regiões mais otimizadas 
+	para reduzir volume de cálculos das interseções.
 \end{itemize}
