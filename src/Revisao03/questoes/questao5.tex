@@ -1,3 +1,12 @@
 \textbf{5)} 
 
-
+A ideia de usar a câmera como ponto de partida 
+para a renderização de raycast é simples. Para
+otimizar o custo de processamento do computador 
+na construção da cena, a partir de uma referência 
+do que será mostrado na tela final, o feixe da 
+câmera é emitido para a frente até que o primeiro 
+objeto seja encontrado e construído na cena. Desta
+forma, objetos atrás do objeto em colisão ou 
+objetos que não aparecerão na imagem final não 
+serão construídos.
